@@ -42,6 +42,13 @@ body{font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helve
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .text-only{padding:18px}
 
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin-top: 16px;
+}
+
 /* Footer */
 .site-footer{background:var(--hijau);color:white;padding:24px;text-align:center}
 
