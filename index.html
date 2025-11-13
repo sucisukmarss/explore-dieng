@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Dieng</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --hijau:#2E8B57;
+      --biru:#0096C7;
+      --kuning:#FFD166;
+      --krem:#FAF9F6;
+      --text:#444;
+      --radius:16px;
+      --shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Nunito',sans-serif;background:var(--krem);color:var(--text)}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 8%;background:white;box-shadow:var(--shadow);position:sticky;top:0;z-index:1000}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo-icon{width:48px;height:48px;border-radius:12px;background:var(--hijau);display:flex;align-items:center;justify-content:center;color:white;font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;box-shadow:var(--shadow)}
+    .logo-text{font-family:'Poppins',sans-serif;font-weight:700;color:var(--hijau)}
+    nav a{margin-left:20px;text-decoration:none;font-weight:600;color:var(--text)}
+    nav a:hover{color:var(--hijau)}
+
+    .hero{position:relative;text-align:center;padding:100px 20px;background:url('https://images.unsplash.com/photo-1617817417387-2b31f8f75a1d?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;color:white}
+    .hero::after{content:'';position:absolute;inset:0;background:rgba(46,139,87,0.45)}
+    .hero-content{position:relative;z-index:1;max-width:700px;margin:auto}
+    .hero h1{font-family:'Poppins';font-size:42px;margin-bottom:12px;text-shadow:0 3px 6px rgba(0,0,0,0.3)}
+    .hero p{font-size:18px;margin-bottom:24px;text-shadow:0 2px 5px rgba(0,0,0,0.4)}
+    .btn{background:var(--kuning);color:#333;border:none;padding:12px 24px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;box-shadow:var(--shadow)}
+    .btn:hover{background:#e6b94f}
+
+    .section{max-width:1100px;margin:60px auto;padding:0 20px}
+    .section h2{text-align:center;font-family:'Poppins';color:var(--hijau);margin-bottom:24px;font-size:28px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+    .card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .card img{width:100%;height:200px;object-fit:cover}
+    .card-body{padding:16px}
+    .card-body h3{font-family:'Poppins';margin-bottom:6px;color:var(--hijau)}
+    .card-body p{font-size:14px;line-height:1.5;color:var(--text)}
+
+    footer{background:var(--hijau);color:white;text-align:center;padding:24px;margin-top:60px}
+    footer a{color:#fff;text-decoration:underline}
+
+    @media(max-width:600px){
+      .hero h1{font-size:32px}
+      .hero p{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon">ED</div>
+      <div class="logo-text">Explore Dieng</div>
+    </div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#destinasi">Destinasi</a>
+      <a href="#budaya">Budaya</a>
+      <a href="#kuliner">Kuliner</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Temukan Pesona Alam & Budaya Dieng</h1>
+      <p>Jelajahi keindahan alam pegunungan, budaya unik, dan kuliner khas di negeri di atas awan.</p>
+      <button class="btn">Jelajahi Sekarang</button>
+    </div>
+  </section>
+
+  <section id="destinasi" class="section">
+    <h2>Destinasi Alam Populer</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1576506295286-5b1ecf3eb37c?auto=format&fit=crop&w=800&q=60" alt="Telaga Warna">
+        <div class="card-body">
+          <h3>Telaga Warna</h3>
+          <p>Danau dengan warna air yang berubah-ubah akibat pantulan cahaya matahari dan kandungan belerang.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=60" alt="Gunung Prau">
+        <div class="card-body">
+          <h3>Gunung Prau</h3>
+          <p>Gunung dengan panorama sunrise terbaik di Jawa Tengah, dikenal dengan lautan awan yang menakjubkan.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1579532826767-74a4b1c8b046?auto=format&fit=crop&w=800&q=60" alt="Kawah Sikidang">
+        <div class="card-body">
+          <h3>Kawah Sikidang</h3>
+          <p>Kawah aktif dengan semburan uap panas yang unik, dikelilingi hamparan perbukitan Dieng.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="budaya" class="section">
+    <h2>Budaya & Festival Dieng</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1601572269532-52f5a356a4a8?auto=format&fit=crop&w=800&q=60" alt="Dieng Culture Festival">
+        <div class="card-body">
+          <h3>Dieng Culture Festival</h3>
+          <p>Festival tahunan dengan acara musik jazz, ruwatan anak gimbal, dan penerbangan lampion di malam hari.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=60" alt="Tradisi Rambut Gimbal">
+        <div class="card-body">
+          <h3>Tradisi Rambut Gimbal</h3>
+          <p>Upacara adat khas Dieng untuk anak-anak berambut gimbal, simbol kemurnian dan berkah alam.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="kuliner" class="section">
+    <h2>Kuliner Khas Dieng</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1569058242402-510c5f3d3fc7?auto=format&fit=crop&w=800&q=60" alt="Mie Ongklok">
+        <div class="card-body">
+          <h3>Mie Ongklok</h3>
+          <p>Hidangan khas Dieng yang terbuat dari mie rebus dengan kuah kental dan cita rasa manis gurih.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1604908177453-e4f5e5e17743?auto=format&fit=crop&w=800&q=60" alt="Carica Dieng">
+        <div class="card-body">
+          <h3>Carica Dieng</h3>
+          <p>Buah pepaya gunung khas Dieng yang diolah menjadi manisan segar, oleh-oleh wajib wisatawan.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>© 2025 Explore Dieng | Portal Eksplorasi Alam & Wisata Lokal</p>
+    <p>Hubungi kami di <a href="mailto:info@exploredieng.id">info@exploredieng.id</a></p>
+  </footer>
+</body>
+</html>
